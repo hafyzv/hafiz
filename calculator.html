@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <title>Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Conversion Calculator</h1>
+            <p>Perform quick and accurate conversions</p>
+        </div>
+    </header>
+	
+	<!-- Navigation Bar -->
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="conversion.html">Conversion Details</a>
+        <a href="calculator.html">Calculator</a>
+    </nav>
+    
+    <main>
+        <!-- Existing Currency Conversion Section -->
+        <section class="conversion-section">
+            <h2>Currency Conversion</h2>
+            <form id="currencyConverter" class="conversion-form">
+                <div class="input-group">
+                    <label for="currencyAmount">Enter Amount:</label>
+                    <input type="number" id="currencyAmount" placeholder="Enter amount" required>
+                </div>
+                <div class="select-group">
+                    <select id="fromCurrency">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="myr">MYR</option>
+                        <option value="sgd">SGD</option>
+                        <!-- Add more currency options as needed -->
+                    </select>
+                    <select id="toCurrency">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="myr">MYR</option>
+                        <option value="sgd">SGD</option>
+                        <!-- Add more currency options as needed -->
+                    </select>
+                </div>
+                <div class="button-result-group">
+                    <button type="button" onclick="convertCurrency('currency')">Convert</button>
+                    <p id="currencyResult" class="conversion-result">Result: </p>
+                </div>
+            </form>
+        </section>
+
+        <!-- New Length Conversion Section -->
+        <section class="conversion-section">
+            <h2>Length Conversion</h2>
+            <form id="lengthConverter" class="conversion-form">
+                <div class="input-group">
+                    <label for="lengthAmount">Enter Length:</label>
+                    <input type="number" id="lengthAmount" placeholder="Enter length" required>
+                </div>
+                <div class="select-group">
+                    <select id="fromLength">
+                        <option value="meter">Meter</option>
+                        <option value="foot">Foot</option>
+                        <!-- Add more length options as needed -->
+                    </select>
+                    <select id="toLength">
+                        <option value="meter">Meter</option>
+                        <option value="foot">Foot</option>
+                        <!-- Add more length options as needed -->
+                    </select>
+                </div>
+                <div class="button-result-group">
+                    <button type="button" onclick="convertCurrency('length')">Convert</button>
+                    <p id="lengthResult" class="conversion-result">Result: </p>
+                </div>
+            </form>
+        </section>
+
+        <!-- New Weight Conversion Section -->
+        <section class="conversion-section">
+            <h2>Weight Conversion</h2>
+            <form id="weightConverter" class="conversion-form">
+                <div class="input-group">
+                    <label for="weightAmount">Enter Weight:</label>
+                    <input type="number" id="weightAmount" placeholder="Enter weight" required>
+                </div>
+                <div class="select-group">
+                    <select id="fromWeight">
+                        <option value="kg">Kilogram</option>
+                        <option value="lb">Pound</option>
+                        <!-- Add more weight options as needed -->
+                    </select>
+                    <select id="toWeight">
+                        <option value="kg">Kilogram</option>
+                        <option value="lb">Pound</option>
+                        <!-- Add more weight options as needed -->
+                    </select>
+                </div>
+                <div class="button-result-group">
+                    <button type="button" onclick="convertCurrency('weight')">Convert</button>
+                    <p id="weightResult" class="conversion-result">Result: </p>
+                </div>
+            </form>
+        </section>
+
+        <!-- New Temperature Conversion Section -->
+        <section class="conversion-section">
+            <h2>Temperature Conversion</h2>
+            <form id="temperatureConverter" class="conversion-form">
+                <div class="input-group">
+                    <label for="temperatureAmount">Enter Temperature:</label>
+                    <input type="number" id="temperatureAmount" placeholder="Enter temperature" required>
+                </div>
+                <div class="select-group">
+                    <select id="fromTemperature">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <!-- Add more temperature options as needed -->
+                    </select>
+                    <select id="toTemperature">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <!-- Add more temperature options as needed -->
+                    </select>
+                </div>
+                <div class="button-result-group">
+                    <button type="button" onclick="convertCurrency('temperature')">Convert</button>
+                    <p id="temperatureResult" class="conversion-result">Result: </p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hafiz. All rights reserved.</p>
+            <p>Contact: hafiz@gmail.com | Follow me: <a href="https://instagram.com/hafyzv" target="_blank">Instagram</a></p>
+        </div>
+    </footer>
+</body>
+</html>
